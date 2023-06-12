@@ -9,8 +9,8 @@ Test and deploy: Push changes to your repository, triggering the CI workflow. On
 
 ### URLs:
 
-1. Deplyed : https://tasneemhassasneh.github.io/server-deployment-practice/
+1. [Deplyed app](https://tasneemhassasneh.github.io/server-deployment-practice/)
 
-2. Github actions:https://github.com/TasneemHassasneh/server-deployment-practice/actions
+2. [Github actions](https://github.com/TasneemHassasneh/server-deployment-practice/actions)
 
-3. pull request: https://github.com/TasneemHassasneh/server-deployment-practice/pull/2
+3. [pull request](https://github.com/TasneemHassasneh/server-deployment-practice/pull/2)
