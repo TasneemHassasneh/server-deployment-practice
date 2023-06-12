@@ -2,14 +2,28 @@
 
 ### Testing the server-deployment
 
-Set up your testing framework: Choose a testing framework such as Jest,  and configure it in your Node.js project. Write your test cases to cover the desired functionality and ensure they can be executed successfully on your local machine.
+in order deliver app on GitHub out to customers i nedd to run three commands :
+1. test
+2. build
+3. deploy
 
-Test and deploy: Push changes to your repository, triggering the CI workflow. Once the tests pass, the CD workflow will be triggered automatically, deploying your application according to the specified deployment steps.
+I can automate this entire process in the cloud by using a CI service like GitHub actions:
+
+* Create workflows
+    * node.js.yml
+* in package.json
+    * create test scripts:
+        * "scripts": {
+    "test": "jest --coverage"
+  }     
+* create text direectory folder:
+    * __test 
+        * server.test.js
 
 
 ### URLs:
 
-1. [Deplyed app](https://tasneemhassasneh.github.io/server-deployment-practice/)
+1. [Deplyed app](https://server-test-hitu.onrender.com/)
 
 2. [Github actions](https://github.com/TasneemHassasneh/server-deployment-practice/actions)
 
