@@ -8,10 +8,11 @@ const  app = express();
 const cors = require('cors');
 app.use(cors());
 
+
 const pageNotFound = require('./middleware/pageNotfound');
 const serverError = require('./middleware/serverError')
 
-app.get('/',  handleHome);
+app.get('/', handleHome);
 app.get('/bad', badRequest);
 
 app.use('*', pageNotFound);
@@ -21,6 +22,7 @@ function handleHome(req, res) {
   res.status(200).json({
     code: 200,
     message: 'Welcome to Home page',
+    time: req.stamper
   })
 }
 
@@ -31,8 +33,13 @@ function badRequest(req, res, next) {
     next({message: 'Not a Number'})
 }
 
+
+
 function start(port) {
   app.listen(port, () => console.log('Up and running on port: ', port))
 }
 
-start(3000)
+module.exports = {
+  app,
+  start
+}
